@@ -1,0 +1,12 @@
+version: '3'  
+services:  
+  jupyter:  
+    build:
+      context: .
+    ports:  
+      - "8888:8888"  
+      - "8000:8000"  
+    volumes:  
+      - ./.jupyter:/root/.jupyter
+      - ./notebook:/usr/src/app/notebook
+      - ./main_project:/usr/src/app/main_project
