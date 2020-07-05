@@ -7,7 +7,7 @@ RUN pip install --upgrade pip && pip install pipenv
 COPY ./Pipfile /usr/src/app/Pipfile
 RUN pipenv install --system --skip-lock
 
-COPY . /usr/src/app/
+COPY .jupyter /usr/src/app/.jupyter
 
 # jupyter
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
