@@ -20,8 +20,8 @@ RUN jupyter labextension install \
 RUN pip install jupyter-lsp python-language-server[all]
 RUN jupyter lab build
 
-# pd.read_html
-RUN pip install pandas lxml html5lib beautifulsoup4
+# library
+RUN pip install pandas lxml html5lib beautifulsoup4 matplotlib
 
 CMD python main_project/manage.py runserver 0.0.0.0:8000 & jupyter lab --allow-root
 
