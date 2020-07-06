@@ -1,0 +1,11 @@
+version: '3'  
+services:  
+  main:
+    image: main-project:1.0.0
+    build:
+      context: ../../
+      dockerfile: ./docker/main/Dockerfile
+    ports:  
+      - "8000:8000"  
+    volumes:  
+      - ../../main_project:/usr/src/app/main_project

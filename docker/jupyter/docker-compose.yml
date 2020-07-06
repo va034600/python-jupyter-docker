@@ -9,4 +9,4 @@ services:
     volumes:  
       - ./.jupyter:/root/.jupyter
       - ./notebook:/usr/src/app/notebook
-      - ./main_project:/usr/src/app/main_project
+      - ../../main_project:/usr/src/app/main_project

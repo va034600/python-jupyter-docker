@@ -1,11 +1,6 @@
-FROM python:3.6.8
+FROM main-project:1.0.0
 
 WORKDIR /usr/src/app
-
-# main_project
-RUN pip install --upgrade pip && pip install pipenv
-COPY ./Pipfile /usr/src/app/Pipfile
-RUN pipenv install --system --skip-lock
 
 COPY .jupyter /usr/src/app/.jupyter
 

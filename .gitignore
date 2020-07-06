@@ -1,6 +1,6 @@
-/.jupyter/*
-!/.jupyter/jupyter_notebook_config.py
-notebook
+/docker/jupyter/.jupyter/*
+!/docker/jupyter/.jupyter/jupyter_notebook_config.py
+/docker/jupyter/notebook
 
 
 
